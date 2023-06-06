@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    display: grid;
+    place-items: center;
+}
+
+button {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 60px;
+    background-color: #16163b;
+    color: #ffffff77;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+    transition-delay: 0.8s;
+}
+
+button:hover {
+    color: #00ffee;
+    letter-spacing: 0.30em;
+    text-shadow: 0 0 5px #00ffee;
+}
+
+button span {
+    display: block;
+    position: absolute;
+    background-color: #00ffee;
+    box-shadow: 0 0 5px #00ffee;
+    transition-delay: 0.2s;
+}
+
+button span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 50.5%;
+    height: 1.5px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+button:hover span:nth-child(1) {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+button span:nth-child(2) {
+    top: 0;
+    right: 0;
+    width: 50.5%;
+    height: 1.5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+button:hover span:nth-child(2) {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+button span:nth-child(3) {
+    top: 0;
+    right: 0;
+    width: 1.5px;
+    height: 100%;
+    transform-origin: bottom;
+    transform: scaleY(0);
+    transition: transform 0.5s ease 0.4s;
+}
+
+button:hover span:nth-child(3) {
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+button span:nth-child(4) {
+    top: 0;
+    left: 0;
+    width: 1.5px;
+    height: 100%;
+    transform-origin: bottom;
+    transform: scaleY(0);
+    transition: transform 0.5s ease 0.4s;
+}
+
+button:hover span:nth-child(4) {
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+button span:nth-child(5) {
+    bottom: 0;
+    left: 0;
+    width: 50.5%;
+    height: 1.5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s ease 0.8s;
+}
+
+button:hover span:nth-child(5) {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+button span:nth-child(6) {
+    bottom: 0;
+    right: 0;
+    width: 50.5%;
+    height: 1.5px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.5s ease 0.8s;
+}
+
+button:hover span:nth-child(6) {
+    transform: scaleX(1);
+    transform-origin: right;
+}
